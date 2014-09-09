@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -11,15 +13,11 @@ header {
 	background-color: #c8c8c7;
 	width: 100%;
 	position: fixed;
+	top: 0;
+	z-index: 1;
 	padding-top: 20px;
 	padding-bottom: 20px;
-}
-
-.wrapper {
-	width: 960px;
-	margin: 0 auto;
-}
-nav {
+	text-decoration: none;
 }
 
 nav a {
@@ -36,61 +34,76 @@ nav a {
 
 nav a:hover {
 	color: red;
+	text-decoration: none;
 }
 
-.col-8 {
-	width: 66%;
-}
-.col-4 {
-	width: 33%;
+footer a {
+	color: black;
 }
 
-.footer {
+footer a:hover {
+	color: #c8c8c7;
+	text-decoration: none;
+}
+
+/*/////// SOCIAL ////////*/
+
+#social {
+  position: fixed;
+  top: 163px;
+  right: 20px;
+  width: 40px;
+  z-index: 2;
+}
+
+#social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+a.fbook, a.twit, a.gplus {
+  background: url(../images/social-icons.png) no-repeat;
+}
+
+a.fbook { background-position: 0 0; }
+a.fbook:hover { background-position: -40px 0; }
+a.fbook:active { background-position: -80px 0; }
+
+a.twit { background-position: 0 -40px; }
+a.twit:hover { background-position: -40px -40px; }
+a.twit:active { background-position: -80px -40px; }
+
+a.gplus { background-position: 0 -80px; }
+a.gplus:hover { background-position: -40px -80px; }
+a.gplus:active { background-position: -80px -80px; }
+
+
+
+/*////////// MAIN //////////*/
+
+#main {
+	margin-top: 150px;
+	font-family: Droid Serif;
+	font-size: 1.5em;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	image-width: 10%;
+}
+
 	
-	padding-top: 100px;
-}
-
-p, address { 
-  font-size: 1em; /* 16px, ?pt, 100%, 1em */
-  line-height: 1.5em;
-}
-
-
-[class*="col"]{
-	float: left;
-}
-
-/*////////// DETAILS //////////*/
-
-#details {
-  border-top: 1px solid white;
-}
-
-#details div {
-  height: 221px;
-}
-
-#details a:link, #details a:visited {
-  color: black;
-  text-decoration: none;
-}
-
-#details a:hover {
-  color: black;
-  text-decoration: underline;
-}
-
-#details a:active {
-  color: red;
-}
 
 /*////////// FOOTER //////////*/
 
 footer {
-  text-align: center; 
-  font-size: 0.75em;
+  margin: 0;
+  font-size: 0.8em;
   padding: 10px;
+  padding-top: 30px;
   background: #eee;
-  border-top: 1px solid; 
+  width: 100%;
+  padding-bottom: 70px;
 }
-
