@@ -9,6 +9,11 @@ body {
 	margin: 0;
 }
 
+.responsive-media {
+	width: 100%;
+	max-width: 100%;
+}
+
 header {
 	background-color: #c8c8c7;
 	width: 100%;
@@ -20,16 +25,23 @@ header {
 	text-decoration: none;
 }
 
+nav{
+text-align: right;
+}
+
 nav a {
 	color: white;
 	text-decoration: none;
 	font-size: 1.25em;
 	letter-spacing: auto;
 	font-weight: 300;
-	width: 25%;
+	/*width: 25%;*/
 	display: inline-block;
 	text-align: right;
-	padding-top: 60px;
+	padding: 60px 0 0 35px;
+}
+nav a:first-child {
+	padding: 60px 0 0 0;
 }
 
 nav a:hover {
@@ -99,7 +111,7 @@ a.gplus:active { background-position: -80px -80px; }
 /*////////// FOOTER //////////*/
 
 footer {
-  margin: 0;
+	margin: none;
   font-size: 0.8em;
   padding: 10px;
   padding-top: 30px;
@@ -107,3 +119,36 @@ footer {
   width: 100%;
   padding-bottom: 70px;
 }
+
+@media only screen and (max-width: 768px) {
+	header img{
+		width: 100px;
+	}
+	
+	nav {
+		text-align: center;
+	}	
+
+	nav a, nav a:first-child {
+		padding: 20px 20px 0 20px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	
+	nav a, nav a:first-child {
+		padding: 20px 10px 0 10px;
+	}
+}
+@media only screen and (max-width: 460px) {
+	
+	nav a, nav a:first-child {
+		padding: 10px 6px 0 6px;
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (max -with}
+	body{
+		font-size: 90%;
+		}
